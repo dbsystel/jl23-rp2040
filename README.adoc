@@ -17,17 +17,12 @@ Der Raspberry Pico 2040 hat die Welt der Hardware-Bastler im Sturm erobert. Lass
 //tag::agenda[]
 :url-1: https://hackaday.com/2022/12/13/open-world-3d-game-runs-on-the-rp2040-microcontroller/
 
+[.medium]
 * Kurzvorstellung der features des Boards
 * gemeinsames Aufsetzen der Entwicklungsumgebung
 * Umsetzung eines ersten "Hello-World" Beispiels
-* Sammlung von weiteren Ideen wie z.B.
-** Abfahrtsanzeige eines Bahnhofs
-** Konferenz-Badge
-** Darstellung eines QR-Codes (JavaLand Eintritts-Code?)
-** Pomodoro-Timer für Produktivität
-** Umsetzung eines Video-Spiels
-** {url-1}[Grafikdemo]
-** ...
+* Sammlung von weiteren Ideen
+* Coden
 
 //end::agenda[]
 

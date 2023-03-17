@@ -16,7 +16,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
     --r-main-font: DBHead, Helvetica, sans-serif;
     --r-main-font-size: 42px;
     --r-main-color: #222;
-    --r-block-margin: 20px;
+    --r-block-margin: 10px;
     --r-heading-margin: 0 0 20px 0;
     --r-heading-font: DBSans, Helvetica, sans-serif;
     --r-heading-color: #222;
@@ -282,7 +282,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal table th,
 .reveal table td {
     text-align: left;
-    padding: 0.2em 0.5em 0.2em 0.5em;
+    padding: 0.0em 0.2em 0.0em 0.2em !important;
     border-bottom: 1px solid;
 }
 
