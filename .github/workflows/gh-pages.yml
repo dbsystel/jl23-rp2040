@@ -15,11 +15,11 @@ jobs:
     env:
       DTC_HEADLES: true
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: setup
         run: chmod +x dtcw
       - name: generateSite
-        run: ./dtcw generateSite
+        run: ./dtcw install generateDeck
       - name: copyToPublic
         run: cp -r ./build/decks/html5 ./public
       - name: Deploy
