@@ -1,0 +1,37 @@
+= JavaLand2023: Hacking the RP2040
+
+:icons: font
+:url-1: https://hackaday.com/2022/12/13/open-world-3d-game-runs-on-the-rp2040-microcontroller/
+
+image::https://www.javaland.eu/typo3conf/ext/doag/Resources/Public/Images/logo_javaland.png[]
+
+[cols="2"]
+|===
+a|image::https://www.jug-da.de/images/jugda_logo_rund.png[width=200px]
+a|image::images/Duke_digitalisiert_die_Schiene.png[width=250px]
+|===
+
+Der Raspberry Pico 2040 hat die Welt der Hardware-Bastler im Sturm erobert. Lasst und ein wenig Zeit nehmen um diese faszinierende Welt zu erkunden. Ich werde dazu ein paar Tufty-2040 oder Badger-2040 mitbringen, die den Prozessor gleich mit einem Display und ein paar Buttons kombinieren.
+
+=== Ablauf:
+
+* gemeinsames Aufsetzen der Entwicklungsumgebung
+* Umsetzung eines ersten "Hello-World" Beispiels
+* Kurzvorstellung der features des Boards
+* Sammlung von weiteren Ideen wie z.B.
+** Abfahrtsanzeige eines Bahnhofs
+** Konferenz-Badge
+** Darstellung eines QR-Codes (JavaLand Eintritts-Code?)
+** Umsetzung eines Video-Spiels
+** {url-1}[Grafikdemo]
+** ...
+* Hacking in Gruppen um die Ideen zu besprechen und auszuprobieren
+
+NOTE: Teilnehmer müssen ein Notebook mitbringen
+
+== Links:
+
+* https://shop.pimoroni.com/products/tufty-2040[Pimoroni Tufty]
+* https://learn.pimoroni.com/article/getting-started-with-tufty-2040[getting started]
+* https://github.com/pimoroni/pimoroni-pico/tree/main/micropython/examples/tufty2040[Example-Code]
+* https://docs.micropython.org/en/latest/[MicroPython]
