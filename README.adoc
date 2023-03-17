@@ -22,6 +22,7 @@ Der Raspberry Pico 2040 hat die Welt der Hardware-Bastler im Sturm erobert. Lass
 ** Abfahrtsanzeige eines Bahnhofs
 ** Konferenz-Badge
 ** Darstellung eines QR-Codes (JavaLand Eintritts-Code?)
+** Pomodoro-Timer für Produktivität
 ** Umsetzung eines Video-Spiels
 ** {url-1}[Grafikdemo]
 ** ...
