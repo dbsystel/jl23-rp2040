@@ -40,7 +40,26 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );</script><!--[if 
 <div class="paragraph small"><small>(Quelle: <a href="https://blog.berrybase.de/blog/2022/06/30/raspberry-pi-pico-w/" class="bare">https://blog.berrybase.de/blog/2022/06/30/raspberry-pi-pico-w/</a>)</small></div></section></section>
 <section><section id="slide-und-der-tufty"><h2>Und der Tufty?</h2><div class="imageblock noborder" style=""><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/tufty-2040-3_1500x1500.jpg?v=1655293553" alt="tufty 2040 3 1500x1500" width="600px"></div><div class="paragraph small"><small>(Quelle: <a href="https://shop.pimoroni.com/products/tufty-2040" class="bare">https://shop.pimoroni.com/products/tufty-2040</a>)</small></div></section><section id="slide-features-2"><h2>Features</h2><div class="ulist medium"><ul><li class="fragment"><p>2.4" colour IPS LCD display (320 x 240 pixels)</p><div class="ulist"><ul><li><p>Connected via parallel</p></li><li><p>Dimmable backlight (adjustable via PWM)</p></li></ul></div></li><li class="fragment"><p>Powered by RP2040 (Dual Arm Cortex M0+ running at up to 133Mhz with 264kB of SRAM)</p></li><li class="fragment"><p>8MB of QSPI flash supporting XiP</p></li><li class="fragment"><p><strong>Phototransistor</strong> for light sensing</p></li><li class="fragment"><p>Five front user buttons</p></li><li class="fragment"><p>Power and boot buttons (the boot button can also be used as a user button)</p></li><li class="fragment"><p>White LED</p></li><li class="fragment"><p>USB-C connector for power and programming</p></li><li class="fragment"><p>JST-PH connector for attaching a battery (input range 3V - 5.5V)</p></li><li class="fragment"><p>High-precision voltage reference for battery level monitoring.</p></li><li class="fragment"><p>Qw/ST (Qwiic/STEMMA QT) connector</p></li></ul></div>
 <div class="paragraph small"><small>(Quelle: <a href="https://shop.pimoroni.com/products/tufty-2040" class="bare">https://shop.pimoroni.com/products/tufty-2040</a>)</small></div></section></section>
-<section id="slide-ideen-sammlung"><h2>Ideen-Sammlung!</h2><div class="ulist medium"><ul><li><p>Abfahrtsanzeige eines Bahnhofs</p></li><li><p>Konferenz-Badge</p></li><li><p>Darstellung eines QR-Codes (JavaLand Eintritts-Code?)</p></li><li><p>Pomodoro-Timer für Produktivität</p></li><li><p>Umsetzung eines Video-Spiels</p></li><li><p><a href="https://hackaday.com/2022/12/13/open-world-3d-game-runs-on-the-rp2040-microcontroller/">Grafikdemo</a></p></li><li><p>was mit USB?</p></li></ul></div></section>
+<section><section id="slide-aufsetzen-der-entwicklungsumgebung"><h2>Aufsetzen der Entwicklungsumgebung</h2><div class="paragraph"><p><a href="https://thonny.org/" class="bare">https://thonny.org/</a></p></div><div class="imageblock" style=""><img src="https://thonny.org/img/screenshot.png" alt="screenshot"></div></section><section id="slide-hello-world"><h2>"Hello World"</h2><pre class="highlight listingblock"><code data-noescape class="python language-python">from machine import Pin
+from picographics import PicoGraphics, DISPLAY_TUFTY_2040
+from time import sleep
+
+# turn LED on and off
+
+led = Pin(25, Pin.OUT)
+led.value(1)
+sleep(1)
+led.value(0)</code></pre></section><section id="slide-hello-world-2"><h2>"Hello World"</h2><pre class="highlight listingblock"><code data-noescape class="python language-python"># Console Input and Output
+name = input("you name: ")
+print ("Hello "+name)</code></pre></section><section id="slide-hello-world-3"><h2>"Hello World"</h2><pre class="highlight listingblock"><code data-noescape class="python language-python"># write Text on Display
+display = PicoGraphics(display=DISPLAY_TUFTY_2040)
+
+WHITE = display.create_pen(255, 255, 255)
+
+display.set_pen(WHITE)
+display.text("Hello JavaLand!", 0, 0, 320, 4)
+display.update()</code></pre></section></section>
+<section id="slide-ideen-sammlung"><h2>Ideen-Sammlung!</h2><div class="ulist medium"><ul><li class="fragment"><p>Abfahrtsanzeige eines Bahnhofs</p></li><li class="fragment"><p>Konferenz-Badge</p></li><li class="fragment"><p>Darstellung eines QR-Codes (JavaLand Eintritts-Code?)</p></li><li class="fragment"><p>Pomodoro-Timer für Produktivität</p></li><li class="fragment"><p>Umsetzung eines Video-Spiels</p></li><li class="fragment"><p><a href="https://hackaday.com/2022/12/13/open-world-3d-game-runs-on-the-rp2040-microcontroller/">Grafikdemo</a></p></li><li class="fragment"><p>was mit USB?</p></li></ul></div></section>
 <section id="slide-weiterführende-links"><h2>weiterführende Links</h2><div class="ulist"><ul><li><p><a href="https://shop.pimoroni.com/products/tufty-2040">Pimoroni Tufty</a></p></li><li><p><a href="https://learn.pimoroni.com/article/getting-started-with-tufty-2040">getting started</a></p></li><li><p><a href="https://github.com/pimoroni/pimoroni-pico/tree/main/micropython/examples/tufty2040">Example-Code</a></p></li><li><p><a href="https://docs.micropython.org/en/latest/">MicroPython</a></p></li></ul></div>
 <script>
 var imgs = document.getElementsByTagName("img");
