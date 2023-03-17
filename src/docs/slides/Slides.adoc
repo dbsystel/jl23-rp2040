@@ -143,9 +143,36 @@ image::https://cdn.shopify.com/s/files/1/0174/1800/products/tufty-2040-3_1500x15
 [.small]
 (Quelle: https://shop.pimoroni.com/products/tufty-2040)
 
+== Aufsetzen der Entwicklungsumgebung
+
+https://thonny.org/
+
+image::https://thonny.org/img/screenshot.png[]
+
+=== "Hello World"
+
+[source,python]
+----
+include::{projectRootDir}/src/helloWorld/helloWorld.py[tags=one]
+----
+
+=== "Hello World"
+
+[source,python]
+----
+include::{projectRootDir}/src/helloWorld/helloWorld.py[tags=two]
+----
+
+=== "Hello World"
+
+[source,python]
+----
+include::{projectRootDir}/src/helloWorld/helloWorld.py[tags=three]
+----
+
 == Ideen-Sammlung!
 
-[.medium]
+[.medium%step]
 * Abfahrtsanzeige eines Bahnhofs
 * Konferenz-Badge
 * Darstellung eines QR-Codes (JavaLand Eintritts-Code?)
