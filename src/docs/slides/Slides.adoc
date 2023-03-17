@@ -1,0 +1,37 @@
+:revealjs_theme: white
+:customcss: images/slides/css/db.css
+:revealjs_slideNumber: c/t
+:revealjs_width: 1600
+:revealjs_height: 900
+:revealjs_controlsBackArrows: hidden
+:revealjs_controls: false
+:title-slide-background-image: slides/facetten_unten_blau.png
+:title-slide-background-size: cover
+:revealjs_parallaxBackgroundImage: images/slides/facetten_unten_grau.png
+:revealjs_parallaxBackgroundSize: 2000px 2092px
+
+ifndef::imagesdir[:imagesdir: ../images]
+
+= hacking the RP2040
+Ralf D. Müller| DB Systel | JUG Darmstadt
+
+include::_config.adoc[]
+
+
+[.title-slide-red-stripe]
+--
+
+--
+
+[.noborder]
+image::title.dio.png[]
+
+== Über den RP2040
+
+== Agenda
+
+include::{projectRootDir}/README.adoc[tags=agenda]
+
+== weiterführende Links
+
+include::{projectRootDir}/README.adoc[tags=links]
