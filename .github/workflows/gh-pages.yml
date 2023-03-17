@@ -19,7 +19,7 @@ jobs:
       - name: setup
         run: chmod +x dtcw
       - name: generateSite
-        run: ./dtcw generateSite
+        run: ./dtcw generateDeck
       - name: copyToPublic
         run: cp -r ./build/decks/html5 ./public
       - name: Deploy
