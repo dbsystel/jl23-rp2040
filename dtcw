@@ -125,6 +125,7 @@ if [ "${1}" = "generateDeck" ]; then
         echo ""
     else
         echo "cloning reveal.js"
+        mkdir "${HOME}/.doctoolchain/docToolchain-${DTC_VERSION}/resources"
         (cd "${HOME}/.doctoolchain/docToolchain-${DTC_VERSION}/resources" && ./clone.sh)
     fi
 fi
