@@ -33,6 +33,7 @@ image::title.dio.png[]
 
 == Agenda
 
+[%steps]
 include::{projectRootDir}/README.adoc[tags=agenda]
 
 
