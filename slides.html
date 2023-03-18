@@ -51,10 +51,10 @@ led = Pin(25, Pin.OUT)
 led.value(1)
 sleep(1)
 led.value(0)</code></pre>
-<div class="imageblock" style=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Hdl.jpg" alt="Hdl" width="70%"></div><div class="title">Figure 1. (Quelle: <a href="https://de.wikipedia.org/wiki/Projekt_Blinkenlights" class="bare">https://de.wikipedia.org/wiki/Projekt_Blinkenlights</a>)</div></section><section id="slide-hello-world-console-version"><h2>"Hello World" Console Version</h2><pre class="highlight listingblock"><code data-noescape class="python language-python"># Console Input and Output
+<div class="imageblock borderless" style=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Hdl.jpg" alt="Hdl" width="50%"></div><div class="title">Figure 1. (Quelle: <a href="https://de.wikipedia.org/wiki/Projekt_Blinkenlights" class="bare">https://de.wikipedia.org/wiki/Projekt_Blinkenlights</a>)</div></section><section id="slide-hello-world-console-version"><h2>"Hello World" Console Version</h2><pre class="highlight listingblock"><code data-noescape class="python language-python"># Console Input and Output
 name = input("you name: ")
 print ("Hello "+name)</code></pre>
-<div class="imageblock" style=""><img src="images/hello_world.png" alt="hello world"></div></section><section id="slide-hello-world-display-version"><h2>"Hello World" Display Version</h2><pre class="highlight listingblock"><code data-noescape class="python language-python"># write Text on Display
+<div class="imageblock borderless" style=""><img src="images/hello_world.png" alt="hello world"></div></section><section id="slide-hello-world-display-version"><h2>"Hello World" Display Version</h2><pre class="highlight listingblock"><code data-noescape class="python language-python"># write Text on Display
 display = PicoGraphics(display=DISPLAY_TUFTY_2040)
 
 WHITE = display.create_pen(255, 255, 255)
@@ -62,7 +62,7 @@ WHITE = display.create_pen(255, 255, 255)
 display.set_pen(WHITE)
 display.text("Hello JavaLand!", 0, 0, 320, 4)
 display.update()</code></pre>
-<div class="imageblock" style=""><img src="images/Monitor_Final_2.png" alt="Monitor Final 2"></div></section></section>
+<div class="imageblock borderless" style=""><img src="images/Monitor_Final_2.png" alt="Monitor Final 2"></div></section></section>
 <section id="slide-ideen-sammlung"><h2>Ideen-Sammlung!</h2><div class="ulist medium"><ul><li class="fragment"><p>Abfahrtsanzeige eines Bahnhofs</p></li><li class="fragment"><p>JUG-DA Raffle</p></li><li class="fragment"><p>Konferenz-Badge</p></li><li class="fragment"><p>Darstellung eines QR-Codes (JavaLand Eintritts-Code?)</p></li><li class="fragment"><p>Pomodoro-Timer für Produktivität</p></li><li class="fragment"><p>Umsetzung eines Video-Spiels</p></li><li class="fragment"><p><a href="https://hackaday.com/2022/12/13/open-world-3d-game-runs-on-the-rp2040-microcontroller/">Grafikdemo</a></p></li><li class="fragment"><p>was mit USB?</p></li></ul></div></section>
 <section id="slide-weiterführende-links"><h2>weiterführende Links</h2><div class="ulist"><ul><li><p><a href="https://shop.pimoroni.com/products/tufty-2040">Pimoroni Tufty</a></p></li><li><p><a href="https://learn.pimoroni.com/article/getting-started-with-tufty-2040">getting started</a></p></li><li><p><a href="https://github.com/pimoroni/pimoroni-pico/tree/main/micropython/examples/tufty2040">Example-Code</a></p></li><li><p><a href="https://docs.micropython.org/en/latest/">MicroPython</a></p></li></ul></div>
 <script>
