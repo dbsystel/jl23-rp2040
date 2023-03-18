@@ -13,7 +13,12 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 = hacking the RP2040
-Ralf D. Müller| DB Systel | JUG Darmstadt
+
+:url1: https://fiveandahalfstars.ninja/rdmueller.html
+:url2: https://www.dbsystel.de/karriere
+:url3: https://www.jug-da.de
+
+{url1}[Ralf D. Müller] | {url2}[DB Systel] | {url3}[JUG Darmstadt]
 
 include::_config.adoc[]
 
