@@ -162,9 +162,11 @@ image::https://thonny.org/img/screenshot.png[]
 include::{projectRootDir}/src/helloWorld/helloWorld.py[tags=one]
 ----
 
-[.borderless]
-.(Quelle: https://de.wikipedia.org/wiki/Projekt_Blinkenlights)
+[.noborder]
 image::https://upload.wikimedia.org/wikipedia/commons/8/85/Hdl.jpg[width=50%]
+
+[.small]
+(Quelle: https://de.wikipedia.org/wiki/Projekt_Blinkenlights)
 
 === "Hello World" Console Version
 
@@ -174,7 +176,7 @@ image::https://upload.wikimedia.org/wikipedia/commons/8/85/Hdl.jpg[width=50%]
 include::{projectRootDir}/src/helloWorld/helloWorld.py[tags=two]
 ----
 
-[.borderless]
+[.noborder]
 image::hello_world.png[]
 
 === "Hello World" Display Version
@@ -185,7 +187,7 @@ image::hello_world.png[]
 include::{projectRootDir}/src/helloWorld/helloWorld.py[tags=three]
 ----
 
-[.borderless]
+[.noborder]
 image::Monitor_Final_2.png[]
 
 == Ideen-Sammlung!
