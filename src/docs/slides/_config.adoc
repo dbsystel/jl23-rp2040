@@ -4,5 +4,17 @@
 .slides::after {
     content: "DB Systel | JUG Darmstadt | Ralf D. Müller | JavaLand 2023";
 }
+.medium {
+    font-size: 36px !important;
+}
+.dense {
+    font-size: 21px !important;
+}
+.reveal small {
+    font-size: 16px !important;
+}
+.dense td  {
+    padding: 0.1em 0.2em 0.1em 0.2em !important;
+}
 </style>
 ++++

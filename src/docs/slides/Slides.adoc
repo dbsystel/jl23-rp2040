@@ -31,12 +31,171 @@ include::_config.adoc[]
 [.noborder]
 image::title.dio.png[]
 
-== Über den RP2040
-
 == Agenda
 
 include::{projectRootDir}/README.adoc[tags=agenda]
 
+
+== Über den RP2040
+
+[.noborder]
+image::https://blog.berrybase.de/wp-content/uploads/2022/06/01_Pico_W_Original_Pico_012021.png[width=600px]
+
+[.small]
+(Quelle: https://blog.berrybase.de/blog/2022/06/30/raspberry-pi-pico-w/)
+
+=== Features
+
+[.medium]
+Raspberry Pi Pico is a low-cost, high-performance microcontroller board with flexible digital interfaces. Key features include:
+
+[.medium%step]
+* https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html#welcome-to-rp2040[RP2040] microcontroller chip designed by Raspberry Pi in the United Kingdom
+* Dual-core Arm Cortex M0+ processor, flexible clock running up to 133 MHz
+* 264kB of SRAM, and 2MB of on-board flash memory
+* USB 1.1 with device and host support
+* Low-power sleep and dormant modes
+* Drag-and-drop programming using mass storage over USB
+* 26 × multi-function GPIO pins
+* 2 × SPI, 2 × I2C, 2 × UART, 3 × 12-bit ADC, 16 × controllable PWM channels
+* Accurate clock and timer on-chip, Temperature sensor
+* Accelerated floating-point libraries on-chip
+* 8 × Programmable I/O (PIO) state machines for custom peripheral support
+
+[.small]
+(Quelle: raspberrypi.com)
+
+=== Vergleich mit Arduino Uno und Nano
+
+[.dense]
+[cols=",,,",]
+|===
+|  |*Raspberry Pi Pico* |*Arduino Uno Rev 3* |*Arduino Nano*
+|*Controller* |RP2040 |ATmega328P |ATmega328
+|*Taktfrequenz* |133MHz |16MHz |16MHz
+|*Cores* |2 |1 |1
+|*SRAM* |264KB |2KB |2KB
+|*Betriebsspannung* |3,3V |5V |5V
+|*GPIOs** |30 |20 |22
+|*Maße (LxB) mm* |51,3 x 21 |53,4 x 68,6 |69 x 53
+|*USB-Anschluss* |Micro-USB |USB-A |Micro-USB
+|*Programmiersprache* |Micro- CircuitPython |Arduino-Sketch |Arduino-Sketch
+|*WiFi* |Nein, nur über Shields |Nein, nur über Shields |Nein, nur über Shields
+|*Bluetooth* |Nein, nur über Shields |Nein, nur über Shields |Nein, nur über Shields
+|*Preis* |Um die 4-5 Euro |Um die 20 Euro |Um die 14 Euro
+|===
+
+[.small]
+(Quelle: https://blog.berrybase.de/blog/2022/06/30/raspberry-pi-pico-w/)
+
+=== Vergleich mit ESP32 und D1 Mini
+
+[.dense]
+[cols=",,,",options="header",]
+|===
+| |*Raspberry Pi Pico W* |*ESP32 NodeMCU* |*D1 Mini ESP8266*
+|*Controller* |RP2040 |ESP-WROOM-32 |32-bit Xtensa L106
+|*Cores* |2 |2 |1
+|*SRAM* |264KB |520KB |96kB
+|*Betriebsspannung* |3,3V |3,3V |3,3V
+|*GPIOs** |30 |30 |10
+|*Maße (LxB) mm* |51,3 x 21 |25.4 x 48.3 |34.2 x 25.6
+|*USB-Anschluss* |Micro-USB |Micro-USB |Micro-USB
+|*Programmiersprache* |Micro- CircuitPython |Micro- / CircuitPython Arduino Sketch |Micro- / CircuitPython Arduino Sketch
+|*WiFi* |Ja |Ja |Ja
+|*Bluetooth* |Ja* |Ja |Ja
+|*Preis* |Knapp 7 Euro |Knapp 7 Euro |Knapp 5 Euro
+|===
+
+[.small]
+(Quelle: https://blog.berrybase.de/blog/2022/06/30/raspberry-pi-pico-w/)
+
+== Und der Tufty?
+
+[.noborder]
+image::https://cdn.shopify.com/s/files/1/0174/1800/products/tufty-2040-3_1500x1500.jpg?v=1655293553[width=600px]
+
+[.small]
+(Quelle: https://shop.pimoroni.com/products/tufty-2040)
+
+=== Features
+
+[.medium%step]
+* 2.4" colour IPS LCD display (320 x 240 pixels)
+** Connected via parallel
+** Dimmable backlight (adjustable via PWM)
+
+* Powered by RP2040 (Dual Arm Cortex M0+ running at up to 133Mhz with 264kB of SRAM)
+
+* 8MB of QSPI flash supporting XiP
+
+* **Phototransistor** for light sensing
+
+* Five front user buttons
+
+* Power and boot buttons (the boot button can also be used as a user button)
+
+* White LED
+
+* USB-C connector for power and programming
+
+* JST-PH connector for attaching a battery (input range 3V - 5.5V)
+
+* High-precision voltage reference for battery level monitoring.
+
+* Qw/ST (Qwiic/STEMMA QT) connector
+
+[.small]
+(Quelle: https://shop.pimoroni.com/products/tufty-2040)
+
+== Aufsetzen der Entwicklungsumgebung
+
+https://thonny.org/
+
+image::https://thonny.org/img/screenshot.png[]
+
+=== "Hello World"
+
+[source,python]
+----
+include::{projectRootDir}/src/helloWorld/helloWorld.py[tags=one]
+----
+
+=== "Hello World"
+
+[source,python]
+----
+include::{projectRootDir}/src/helloWorld/helloWorld.py[tags=two]
+----
+
+=== "Hello World"
+
+[source,python]
+----
+include::{projectRootDir}/src/helloWorld/helloWorld.py[tags=three]
+----
+
+== Ideen-Sammlung!
+
+[.medium%step]
+* Abfahrtsanzeige eines Bahnhofs
+* Konferenz-Badge
+* Darstellung eines QR-Codes (JavaLand Eintritts-Code?)
+* Pomodoro-Timer für Produktivität
+* Umsetzung eines Video-Spiels
+* {url-1}[Grafikdemo]
+* was mit USB?
+
 == weiterführende Links
 
 include::{projectRootDir}/README.adoc[tags=links]
+
+++++
+<script>
+var imgs = document.getElementsByTagName("img");
+for (var img of imgs) {
+    //img.removeAttribute("width");
+    //img.removeAttribute("height");
+}
+</script>
+++++
