@@ -199,7 +199,7 @@ image::Monitor_Final_2.png[]
 * Konferenz-Badge
 * Darstellung eines QR-Codes (JavaLand Eintritts-Code?)
 * Pomodoro-Timer für Produktivität
-* Umsetzung eines Video-Spiels
+* Umsetzung eines https://magpi.raspberrypi.com/books/retro-gaming-raspberry-pi-2nd-edition[Video-Spiels]
 * {url-1}[Grafikdemo]?, https://kilograham.github.io/rp2040-doom/[Doom]?
 * was mit USB?
 
