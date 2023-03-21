@@ -36,6 +36,10 @@ image::title.dio.png[]
 [%steps]
 include::{projectRootDir}/README.adoc[tags=agenda]
 
+== Vorgeschichte
+
+[.noborder]
+image::badger.png[width=40%]
 
 == Über den RP2040
 
@@ -194,14 +198,13 @@ image::Monitor_Final_2.png[]
 == Ideen-Sammlung!
 
 [.medium%step]
+* Konferenz-Badge mit QR-Code
 * Abfahrtsanzeige eines Bahnhofs
 * JUG-DA Raffle
-* Konferenz-Badge
-* Darstellung eines QR-Codes (JavaLand Eintritts-Code?)
 * Pomodoro-Timer für Produktivität
 * Umsetzung eines https://magpi.raspberrypi.com/books/retro-gaming-raspberry-pi-2nd-edition[Video-Spiels]
 * {url-1}[Grafikdemo]?, https://kilograham.github.io/rp2040-doom/[Doom]?
-* was mit USB?
+* was mit USB? OTP?
 
 == weiterführende Links
 
